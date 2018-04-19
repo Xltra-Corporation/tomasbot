@@ -8,8 +8,7 @@ var yesOrNo = rand[Math.floor(Math.random()*rand.length)];
 
 
 client.on('ready', () => {
-    console.log('Connecting...');
-  
+    console.log('Connected to Github & Discord');
 });
 
 client.on('message', message => {
@@ -58,13 +57,7 @@ client.on('message', message => {
         message.channel.send({embed})
     }
   	
-    if (message.content === prefix + 'pong') {
-    	const embed = new Discord.RichEmbed()
-        .setColor(0x00AE86)
-        .addField('Pong!', 'WAIT A SECOND!')
-        message.channel.send({embed})
-    }
-        
+ 
         });
         // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
