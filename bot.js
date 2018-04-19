@@ -9,8 +9,7 @@ var yesOrNo = rand[Math.floor(Math.random()*rand.length)];
 
 client.on('ready', () => {
     console.log('Connecting...');
-    console.log('Starting Node.JS package...');
-    console.log('Bot is now online!');
+  
 });
 
 client.on('message', message => {
