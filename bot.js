@@ -14,12 +14,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === prefix + 'ping') {
-    	message.reply('Pong!');
-  	}
-    if (message.content === prefix + 'pong') {
-    	message.reply('Ping! Hey waiiit!!');
-  	}
+    
+  
     if (message.content === prefix + 'help') {
     	const embed = new Discord.RichEmbed()
         .setColor(0x00AE86)
@@ -36,7 +32,7 @@ client.on('message', message => {
     	message.reply('Currently it is "!"');
   	}
     if (message.content === prefix + '8ball') {
-        message.reply('I say,' + yesOrNo);
+        message.reply('I say, ' + yesOrNo);
     
     }
     	
@@ -51,17 +47,24 @@ client.on('message', message => {
     if (message.content === prefix + '8ball help') {
     	const embed = new Discord.RichEmbed()
         .setAuthor('TomasBot Help')
+        .setFooter('TomasBOT framework')
         .addField('8ball Help', '1. Ask your question\n After asking your question enter the command !8ball and send it.\n You will receive a reply.')
         message.channel.send({embed})
     }
 
-    if (message.content === prefix + 'ping-test') {
+    if (message.content === prefix + 'ping') {
     	const embed = new Discord.RichEmbed()
         .setColor(0x00AE86)
         .addField('Ping!', 'How fast was i?')
         message.channel.send({embed})
     }
   	
+    if (message.content === prefix + 'pong') {
+    	const embed = new Discord.RichEmbed()
+        .setColor(0x00AE86)
+        .addField('Pong!', 'WAIT A SECOND!')
+        message.channel.send({embed})
+    }
         
         });
         // THIS  MUST  BE  THIS  WAY
