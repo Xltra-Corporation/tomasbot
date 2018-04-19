@@ -52,7 +52,14 @@ client.on('message', message => {
         .addField('8ball Help', '1. Ask your question\n After asking your question enter the command !8ball and send it.\n You will receive a reply.')
         message.channel.send({embed})
   	}
-  
+
+    if (message.content === prefix + 'ping-test') {
+    	const embed = new Discord.RichEmbed()
+        .setColor(0x00AE86)
+        .addField('Ping!', 'How fast was i?')
+        message.channel.send({embed})
+        ]
+  	
         
         });
         // THIS  MUST  BE  THIS  WAY
