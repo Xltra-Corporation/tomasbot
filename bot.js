@@ -20,7 +20,7 @@ client.on('message', message => {
         .setFooter('TomasBOT Framework - © 2018')
        
         .setAuthor('TomasBot Help')
-        .addField('- General Commands', 'ping\nhelp\nupdates')
+        .addField('- General Commands', 'ping\nupdates')
         .addField('- Fun Commands', '8ball\npong\nlol')
         .addField('- Help Commands', '8ball help\nhelp')
         .addField('Prefix', 'This bot uses "!" as a Prefix.')
