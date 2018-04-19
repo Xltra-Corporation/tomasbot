@@ -21,8 +21,8 @@ client.on('message', message => {
        
         .setAuthor('TomasBot Help')
         .addField('- General Commands', 'ping\nhelp\nupdates')
-        .addField('- Fun Commands', '8ball\npong')
-        .addField('- Help Commands', 'help 8ball\nhelp')
+        .addField('- Fun Commands', '8ball\npong\nlol')
+        .addField('- Help Commands', '8ball help\nhelp')
         .addField('Prefix', 'This bot uses "!" as a Prefix.')
         message.channel.send({embed})
   	
@@ -57,7 +57,10 @@ client.on('message', message => {
         message.channel.send({embed})
     }
   	
- 
+  if (message.content === prefix + 'lol') {
+        message.reply('https://cdn.discordapp.com/attachments/434422408166768641/436536237566853130/qdqbiq.gif');
+    
+    } 
         });
         // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
