@@ -28,6 +28,9 @@ client.on('message', message => {
   	
     if (message.content === 'whats tomasbots prefix?') {
     	message.reply('Currently it is "!"');
+  	} 
+        if (message.content === '@Xltra Bot#7492') {
+    	message.reply('Hmmmm... Try !help');
   	}
     if (message.content === prefix + '8ball') {
         message.reply('I say, ' + yesOrNo);
