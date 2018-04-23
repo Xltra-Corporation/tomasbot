@@ -21,7 +21,7 @@ client.on('message', message => {
        
         .setAuthor('TomasBot Help')
         .addField('- General Commands', 'ping\nupdates')
-        .addField('- Fun Commands', '8ball\npong\nlol')
+        .addField('- Fun Commands', '8ball\npong\nlol\ncookie')
         .addField('- Help Commands', '8ball help\nhelp')
         .addField('Prefix', 'This bot uses "!" as a Prefix.')
         message.channel.send({embed})
@@ -29,8 +29,8 @@ client.on('message', message => {
     if (message.content === 'whats tomasbots prefix?') {
     	message.reply('Currently it is "!"');
   	} 
-        if (message.content === '@Xltra Bot#7492') {
-    	message.reply('Hmmmm... Try !help');
+        if (message.content === 'tomasbot?') {
+    	message.reply('Hello! Try !help');
   	}
     if (message.content === prefix + '8ball') {
         message.reply('I say, ' + yesOrNo);
@@ -53,6 +53,14 @@ client.on('message', message => {
         message.channel.send({embed})
     }
 
+      if (message.content === prefix + 'cookie') {
+    	const embed = new Discord.RichEmbed()
+        .setAuthor('Cookie!')
+        
+        .addField('mmmmmm... Cookies', 'Steals cookie\nYUM!')
+        message.channel.send({embed})
+    }
+    
     if (message.content === prefix + 'ping') {
     	const embed = new Discord.RichEmbed()
         .setColor(0x00AE86)
