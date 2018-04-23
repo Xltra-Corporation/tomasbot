@@ -20,9 +20,9 @@ client.on('message', message => {
         .setFooter('TomasBOT Framework - © 2018')
        
         .setAuthor('TomasBot Help')
-        .addField('- General Commands', 'ping\nupdates')
-        .addField('- Fun Commands', '8ball\npong\nlol\ncookie')
-        .addField('- Help Commands', '8ball help\nhelp')
+        .addField('- General Commands :slight_smile: ', 'ping\nupdates')
+        .addField('- Fun Commands :stuck_out_tongue: ', '8ball\npong\nlol\ncookie')
+        .addField('- Help Commands :grey_question: ', '8ball help\nhelp')
         .addField('Prefix', 'This bot uses "!" as a Prefix.')
         message.channel.send({embed})
   	
