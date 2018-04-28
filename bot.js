@@ -6,9 +6,13 @@ var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'M
 
 var yesOrNo = rand[Math.floor(Math.random()*rand.length)];
 
+bot.on('ready', () => {
+  bot.user.setGame('GAME HERE')
+})
 
 client.on('ready', () => {
     console.log('Connected to Github & Discord');
+    bot.user.setGame('TESTING SOME STUFF OUT!');
 });
 
 client.on('message', message => {
