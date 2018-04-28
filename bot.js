@@ -55,21 +55,21 @@ client.on('message', message => {
 
       if (message.content === prefix + 'cookie') {
     	const embed = new Discord.RichEmbed()
-        .setAuthor('Cookie!')
+        .setAuthor('Cookies ')
         
-        .addField('mmmmmm... Cookies', 'Steals cookie\nYUM!')
+        .addField(':cookie: ')
         message.channel.send({embed})
     }
     
     if (message.content === prefix + 'ping') {
     	const embed = new Discord.RichEmbed()
         .setColor(0x00AE86)
-        .addField('Ping!', 'How fast was i?')
+        .addField('Ping', ' :ping_pong: ')
         message.channel.send({embed})
     }
   	
   if (message.content === prefix + 'lol') {
-        message.reply('https://cdn.discordapp.com/attachments/434422408166768641/436536237566853130/qdqbiq.gif');
+        message.reply('Whats so funny?');
     
     } 
         });
