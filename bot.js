@@ -9,7 +9,6 @@ var yesOrNo = rand[Math.floor(Math.random()*rand.length)];
 
 client.on('ready', () => {
     console.log('Connected to Github & Discord');
-    bot.user.setGame('TESTING SOME STUFF OUT!');
 });
 
 client.on('message', message => {
