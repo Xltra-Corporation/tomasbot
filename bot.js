@@ -64,12 +64,19 @@ client.on('message', message => {
     if (message.content === prefix + 'ping') {
     	const embed = new Discord.RichEmbed()
         .setColor(0x00AE86)
-        .addField('Ping', ' :ping_pong: ')
+        .addField('Pong!', ' :ping_pong: ')
+        message.channel.send({embed})
+    }
+  	
+      if (message.content === prefix + 'pong') {
+    	const embed = new Discord.RichEmbed()
+        .setColor(0x00AE86)
+        .addField('Ping!', ' :ping_pong: ')
         message.channel.send({embed})
     }
   	
   if (message.content === prefix + 'lol') {
-        message.reply('Whats so funny?');
+        message.reply(':joy: ');
     
     } 
         });
