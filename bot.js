@@ -49,7 +49,7 @@ client.on('message', message => {
     .addField('- Version:', '1.0.3')
         message.channel.send({embed})
   	}
-}
+
     if (message.content === prefix + '8ball help') {
     	const embed = new Discord.RichEmbed()
         .setAuthor('TomasBot Help')
