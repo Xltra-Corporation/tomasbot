@@ -26,28 +26,27 @@ client.on('message', message => {
         .addField('Prefix', 'This bot uses "!" as a Prefix.')
         message.channel.send({embed})
     }
-        if (message.content === prefix + 'test' {
-            const embed = new Discord.RichEmbed()
-  .setTitle("TomasBOT")
-  .setAuthor("TomasBOT Test Suite", "https://imgur.com/jN8qKo7")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x00AE86)
-  .setDescription("Welcome to TomasBOT testing, This message and command is for testing purposes, this will be used to preview information to the public.")
-  .setFooter("This is the footer text, it can hold 2048 characters", "https://imgur.com/jN8qKo7")
-  .setImage("https://i.imgur.com/BpotdjV/")
-  .setThumbnail("https://imgur.com/jN8qKo7")
-  /*
-   * Takes a Date object, defaults to current date.
-   */
-  .setTimestamp()
-  .setURL("http://djtn.ml")
-  .addField("TomasBOT is brought to you by Xltra Corporation and Tomas N, via Discord.",
-    "This is coming soon.")
- 
-  message.channel.send({embed});
-}
+     
+      
+    if (message.content === prefix + 'test') {
+    	
+const embed = new Discord.RichEmbed()
+        
+.setColor(0x00AE86)
+    
+ .setAuthor("TomasBOT", "https://imgur.com/jN8qKo7.png")
+    .setFooter('TomasBOT Framework - © 2018')
+    
+   
+        .setAuthor('TomasBot Help')
+    
+    .addField('Uh oh! ', 'Seems like that command is currently being worked on,\nWe recommend you join the support server if you need help with the bot\nThanks for usng TomasBOT.')
+   
+     
+   message.channel.send({embed})
+    }
+     
+    
     if (message.content === 'whats tomasbots prefix?') {
     	message.reply('Currently it is "!"');
   	} 
