@@ -20,7 +20,7 @@ client.on('message', message => {
         .setFooter('TomasBOT Framework - © 2018')
        
           
-         .setAuthor("TomasBOT - Assistive Help")
+         .setAuthor("TomasBOT | Assistive Help")
         .addField('- General Commands :slight_smile: ', 'ping\nupdates')
         .addField('- Fun Commands :stuck_out_tongue: ', '8ball\npong\nlol\ncookie')
         .addField('- Help Commands :grey_question: ', '8ball help\nhelp')
