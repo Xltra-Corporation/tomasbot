@@ -25,8 +25,8 @@ client.on('message', message => {
         .addField('- Help Commands :grey_question: ', '8ball help\nhelp')
         .addField('Prefix', 'This bot uses "!" as a Prefix.')
         message.channel.send({embed})
-  	
-        if (message.content === prefix + 'test'
+    }
+        if (message.content === prefix + 'test' {
             const embed = new Discord.RichEmbed()
   .setTitle("TomasBOT")
   .setAuthor("TomasBOT Test Suite", "https://imgur.com/jN8qKo7")
@@ -47,7 +47,7 @@ client.on('message', message => {
     "This is coming soon.")
  
   message.channel.send({embed});
-        
+}
     if (message.content === 'whats tomasbots prefix?') {
     	message.reply('Currently it is "!"');
   	} 
