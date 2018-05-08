@@ -19,7 +19,8 @@ client.on('message', message => {
         .setColor(0x00AE86)
         .setFooter('TomasBOT Framework - © 2018')
        
-        .setAuthor('TomasBot Help')
+          
+         .setAuthor("TomasBOT", "https://imgur.com/jN8qKo7.png")
         .addField('- General Commands :slight_smile: ', 'ping\nupdates')
         .addField('- Fun Commands :stuck_out_tongue: ', '8ball\npong\nlol\ncookie')
         .addField('- Help Commands :grey_question: ', '8ball help\nhelp')
@@ -28,24 +29,7 @@ client.on('message', message => {
     }
      
       
-    if (message.content === prefix + 'test') {
-    	
-const embed = new Discord.RichEmbed()
-        
-.setColor(0x00AE86)
-    
- .setAuthor("TomasBOT", "https://imgur.com/jN8qKo7.png")
-    .setFooter('TomasBOT Framework - © 2018')
-    
-   
-        .setAuthor('TomasBot Help')
-    
-    .addField('Uh oh! ', 'Seems like that command is currently being worked on,\nWe recommend you join the support server if you need help with the bot\nThanks for usng TomasBOT.')
-   
-     
-   message.channel.send({embed})
-    }
-     
+
     
     if (message.content === 'whats tomasbots prefix?') {
     	message.reply('Currently it is "!"');
